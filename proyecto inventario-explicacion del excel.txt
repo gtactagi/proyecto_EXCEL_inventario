@@ -1,0 +1,32 @@
+Agregar de que va el proyecto, stock de un laboratorio químico
+
+Objetivo
+Crear una base de datos para gestionar el inventario de reactivos químicos de un laboratorio, que permita registrar las entradas y salidas de reactivos, visualizar el inventario actual, generar reportes mensuales y enviar alertas cuando los niveles de inventario sean bajos.
+
+Se van aplicar conceptos como tablas dinámicas:
+
+Las tablas dinámicas es una herramienta que permite resumir, analizar y presentar datos de una manera mas amigable evitando en muchas casos el uso de formulas complejas.
+Son flexibles y de alguna rápida para analizar un considerable volúmenes de datos.
+
+
+Por ejemplo para el conjunto de datos que figura en la Hoja1-datos, una pregunta que podría surgir para alguien que maneja costos, es :
+En que mes se usó mas reactivos y quienes lo consumieron?
+
+De este modo realizando una tabla dinámica, donde se seleccionen los datos, se inserte una tabla dinámica donde a la sección filas se coloque campos fecha de salida, en la sección valores código de reactivo y en una columna Responsable, haciendo un recuente en código reactivo y un filtro por meses en fecha de salida podemos acceder fácilmente a identificar que mes se usó mas reactivo y quienes de los responsables usaron mas.
+
+
+Otra pregunta típica es cuales son los reactivos que mas se consumieron en un top 10: para ello se crea una tabla dinamina donde en filas se coloca el nombre de reactivo y en valores cantidad inicial y cantidad actual. Por otro lado se inserte un nuevo campo en el menú de la tabla dinámica en la sección analizar tabla dinámica en la pestaña "campos, elementos y conjuntos" y seleccionando la opción campo calculado y dentro de él nombrar el campo que se crea y establecer la formula. Al generar este campo , ya se puede mediante el filtro en la etiqueta reactivo filtrar por valor en ese nuevo campo un top10. Ademas si agrego fecha de salida a columnas en la tabla dinamina y establezco filtros puede ver en que mes que cantidad se consumió.
+
+Se agregan funcione básicas como SUMA, CONTAR.SI y BUSCARV. Ademas se agregan filtros a todas las columnas.
+
+Se realiza un grafico de consumo, previo se hace una tabla dinámica para filtrar datos(hoja grafico de consumo)
+
+se genera una macro para obtener los encargados de los reactivos A y reactivo W.
+
+
+
+
+
+
+
+
